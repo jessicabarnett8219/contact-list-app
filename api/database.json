@@ -7,16 +7,28 @@
       "address": "1415 Ocean Ave"
     },
     {
-      "name": "Wally",
-      "phoneNumber": "5023380908",
-      "address": "123",
+      "name": "Wally Barnett",
+      "phoneNumber": "502-338-1126",
+      "address": "3510 Golf St.",
       "id": 2
     },
     {
-      "name": "Jonathan BEam",
-      "phoneNumber": "3333",
-      "address": "4444",
+      "name": "Jonathan Beam",
+      "phoneNumber": "859-825-8824",
+      "address": "2244 Ashbrooke Dr.",
       "id": 3
+    },
+    {
+      "name": "Homer Simpson",
+      "phoneNumber": "615-878-3354",
+      "address": "742 Evergreen Terr.",
+      "id": 4
+    },
+    {
+      "name": "Linda Belcher",
+      "phoneNumber": "502-338-1006",
+      "address": "1415 Ocean Ave.",
+      "id": 5
     }
   ]
 }
