@@ -2,16 +2,24 @@
 
 import apiHandler from "./contact-collection";
 import createContactObject from "./contact-form";
-import contactElementMaker from "./contact";
 import domInjector from "./contact-list";
 
+
+window.addEventListener("load", (event) => {
+  console.log("the page loaded")
+  apiHandler.loadCurrentContacts(event)
+  .then(contactsArray => {
+    contactsArray.forEach(contact => {
+      domInjector(contact)
+    })
+  })
+})
 
 document.querySelector("#submitBtn").addEventListener("click", (event) => {
   console.log("the button was clicked")
   let newContactObject = createContactObject(event)
   apiHandler.createNewContact(newContactObject)
-  let newContactElement = contactElementMaker(newContactObject)
-  domInjector(newContactElement)
+  domInjector(newContactObject)
 })
 
 

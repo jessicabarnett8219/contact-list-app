@@ -14,18 +14,11 @@ const apiHandler = {
     body: JSON.stringify(object)
     }
   )
-  .then(response => console.log(response))
-}
-
-// ,
-//   loadCurrentContacts: function () {
-//     return fetch("http://localhost:8088/contacts/") 
-//     .then(contactsJSON => contactsJSON())
-//     .then(contactsJS => {
-//         createContactElement(contactsJS)
-//     })
-//     .then(contactElements => domInjector(contactElements)) 
-//   }
+},
+  loadCurrentContacts: function () {
+    return fetch("http://localhost:8088/contacts/") 
+    .then(contacts => contacts.json())
+  }
 }
 
 export default apiHandler
