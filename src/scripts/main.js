@@ -1,9 +1,16 @@
-import createContactObject from "./contact-form"
+// event listener on the submit button that executes any other functions. Dependency on post-contact-collection module and dom injection module.
+
+import postContact from "./post-contact-collection";
+import getContactTest from "./get-contact-collection"
+
 
 document.querySelector("#submitBtn").addEventListener("click", (event) => {
-  console.log(createContactObject())
+  console.log("the button was clicked")
+  getContactTest()
+  postContact()
 })
 
 
 
-// event listener on the submit button that executes any other functions. dependency on dom injection module and contact form module.
+
+
