@@ -1,4 +1,3 @@
-// exports function to obtain user input and validate it turn it into an object. no dependencies.
 
 const createContactObject = () => {
   // obtain reference to input fields

@@ -1,11 +1,8 @@
-// exports function to inject the html component into the API. dependency on HTML component  maker function
 
-import contactElementMaker from "./contact"
-
-const addContactToDOM = () => {
-  let contactElement = contactElementMaker()
+const domInjector = (htmlElement) => {
   let outputSection = document.querySelector(".output")
-  outputSection.appendChild(contactElement)
+  outputSection.appendChild(htmlElement)
+  return outputSection
 }
 
-export default addContactToDOM
+export default domInjector

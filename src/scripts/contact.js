@@ -1,14 +1,10 @@
-// exports function to build html component. dependecy on get-contact-collection which contains function to pull data from API
 
-import getContact from "./get-contact-collection"
-
-const contactElementMaker = () => {
-  getContact(1)
+const contactElementMaker = (contactObject) => {
   let contactSection = document.createElement("section")
   contactSection.innerHTML = `
-  <h2>${contacts[0].name}</h2>
-  <p>${contacts[0].phoneNumber}</p>
-  <p>${contacts[0].address}</p>
+  <h2>${contactObject.name}</h2>
+  <p>${contactObject.phoneNumber}</p>
+  <p>${contactObject.address}</p>
   `
   return contactSection
 }

@@ -1,12 +1,13 @@
 // event listener on the submit button that executes any other functions. Dependency on post-contact-collection module and dom injection module.
 
 import apiHandler from "./contact-collection";
+import createContactObject from "./contact-form";
 
 
 
 document.querySelector("#submitBtn").addEventListener("click", (event) => {
   console.log("the button was clicked")
-  apiHandler.createNewContact(event)
+  apiHandler.createNewContact(createContactObject(event))
 })
 
 

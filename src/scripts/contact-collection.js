@@ -1,28 +1,31 @@
-import createContactElement from "./contact-form"
+import createContactObject from "./contact-form"
+import createContactElement from "./contact"
+import domInjector from "./contact-list"
 
 
 
 const apiHandler = {
-  createNewContact: function () {
+  createNewContact: function (input) {
     return fetch("http://localhost:8088/contacts/", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
     },
-    body: JSON.stringify(createContactObject())
+    body: JSON.stringify(input)
     }
   )
-  .then(newContact => createContactElement(newContact))
+  .then(newContactObject => createContactElement(newContactObject))
   .then(contactElement => domInjector(contactElement))
-},
-  loadCurrentContacts: function () {
-    return fetch("http://localhost:8088/contacts/") 
-    .then(contactsJSON => contactsJSON())
-    .then(contactsJS => {
-        createContactElement(contactsJS)
-    })
-    .then(contactElements => domInjector(contactElements)) 
-  }
+}
+// ,
+//   loadCurrentContacts: function () {
+//     return fetch("http://localhost:8088/contacts/") 
+//     .then(contactsJSON => contactsJSON())
+//     .then(contactsJS => {
+//         createContactElement(contactsJS)
+//     })
+//     .then(contactElements => domInjector(contactElements)) 
+//   }
 }
 
 export default apiHandler
