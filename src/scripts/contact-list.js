@@ -1,7 +1,10 @@
 
-const domInjector = (htmlElement) => {
+import contactElementMaker from "./contact"
+
+const domInjector = (object) => {
   let outputSection = document.querySelector(".output")
-  outputSection.appendChild(htmlElement)
+  let contactElement = contactElementMaker(object)
+  outputSection.appendChild(contactElement)
   return outputSection
 }
 

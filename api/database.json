@@ -7,160 +7,16 @@
       "address": "1415 Ocean Ave"
     },
     {
-      "name": "jess",
-      "phoneNumber": "123",
-      "address": "567",
+      "name": "Wally",
+      "phoneNumber": "5023380908",
+      "address": "123",
       "id": 2
     },
     {
-      "name": "",
-      "phoneNumber": "",
-      "address": "",
+      "name": "Jonathan BEam",
+      "phoneNumber": "3333",
+      "address": "4444",
       "id": 3
-    },
-    {
-      "name": "",
-      "phoneNumber": "",
-      "address": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "phoneNumber": "",
-      "address": "",
-      "id": 5
-    },
-    {
-      "name": "jess",
-      "phoneNumber": "fdjgh",
-      "address": "fdhgdf",
-      "id": 6
-    },
-    {
-      "name": "",
-      "phoneNumber": "",
-      "address": "",
-      "id": 7
-    },
-    {
-      "name": "Jessica",
-      "phoneNumber": "502",
-      "address": "123",
-      "id": 8
-    },
-    {
-      "name": "g",
-      "phoneNumber": "g",
-      "address": "g",
-      "id": 9
-    },
-    {
-      "name": "g",
-      "phoneNumber": "g",
-      "address": "g",
-      "id": 10
-    },
-    {
-      "name": "g",
-      "phoneNumber": "g",
-      "address": "g",
-      "id": 11
-    },
-    {
-      "name": "j",
-      "phoneNumber": "f",
-      "address": "f",
-      "id": 12
-    },
-    {
-      "name": "Lisa",
-      "phoneNumber": "Simpson",
-      "address": "Evergreen Terrace",
-      "id": 13
-    },
-    {
-      "name": "Jessica Barnett",
-      "phoneNumber": "502-338-0908",
-      "address": "12345",
-      "id": 14
-    },
-    {
-      "name": "jess",
-      "phoneNumber": "502338",
-      "address": "12345",
-      "id": 15
-    },
-    {
-      "name": "",
-      "phoneNumber": "",
-      "address": "",
-      "id": 16
-    },
-    {
-      "name": "",
-      "phoneNumber": "",
-      "address": "",
-      "id": 17
-    },
-    {
-      "name": "Jess",
-      "phoneNumber": "123",
-      "address": "456",
-      "id": 18
-    },
-    {
-      "name": "...",
-      "phoneNumber": "...",
-      "address": "...",
-      "id": 19
-    },
-    {
-      "name": "Homer",
-      "phoneNumber": "Simpson",
-      "address": "12345",
-      "id": 20
-    },
-    {
-      "name": "wally",
-      "phoneNumber": "50338",
-      "address": "555",
-      "id": 21
-    },
-    {
-      "name": "Jessica",
-      "phoneNumber": "502-338-0908",
-      "address": "2522 Gardiner",
-      "id": 22
-    },
-    {
-      "name": "Wally Beam",
-      "phoneNumber": "jkdjhgkjh",
-      "address": "fdgjhdfj",
-      "id": 23
-    },
-    {
-      "name": "Wally",
-      "phoneNumber": "Barnett",
-      "address": "fdjgkjh",
-      "id": 24
-    },
-    {
-      "name": "1",
-      "phoneNumber": "2",
-      "address": "3",
-      "id": 25
-    },
-    {
-      "name": "rainforest cafe",
-      "phoneNumber": "123",
-      "address": "333",
-      "id": 26
-    },
-    {
-      "name": "www",
-      "phoneNumber": "www",
-      "address": "www",
-      "id": 27
     }
   ]
 }
