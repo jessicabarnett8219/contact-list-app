@@ -1,10 +1,16 @@
-// event listener on the submit button that executes any other functions. Dependency on post-contact-collection module and dom injection module.
+/*
+    Name: main.js
+    Purpose: Sets event listeners that executes the functions from other modules
+*/
+
+// TODO form validation, basic styling just to keep each contacts details together, object classes for new entry object, using fragments and being more effecient with appending to the DOM,  further modularize (main.js might have to much happening in each event handler.)
 
 import apiHandler from "./contact-collection";
 import createContactObject from "./contact-form";
 import domInjector from "./contact-list";
 
 
+// on page load, GET fetch call to API with the loadCurrentContacts function (from contact-collection.js), then loops over the data and calls the domInjector function (from contact-list.js) to print them to the DOM.
 window.addEventListener("load", (event) => {
   console.log("the page loaded")
   apiHandler.loadCurrentContacts(event)
@@ -15,6 +21,7 @@ window.addEventListener("load", (event) => {
   })
 })
 
+// on click of the submit button, creates a new object from the user input using the createNewContact function (from contact.js) then does a POST fetch call to add it to the database using the createNewContact function (from content-collection.js) then prints it to the DOM using the domInjector function (from contact-list.js)
 document.querySelector("#submitBtn").addEventListener("click", (event) => {
   console.log("the button was clicked")
   let newContactObject = createContactObject(event)
@@ -23,6 +30,7 @@ document.querySelector("#submitBtn").addEventListener("click", (event) => {
 })
 
 
+// No exports. Entrypoint of the application
 
 
 
