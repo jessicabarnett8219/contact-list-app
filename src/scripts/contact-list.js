@@ -1,0 +1,1 @@
+// exports function to inject the html component into the API. dependency on HTML component  maker function

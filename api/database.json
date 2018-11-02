@@ -1,7 +1,10 @@
 {
   "contact-list": [
     {
-      "name": ""
+      "id": 1, 
+      "name": "Bob Belcher",
+      "phoneNumber": "502-338-0908",
+      "address": "1415 Ocean Ave"
     }
   ]
 }

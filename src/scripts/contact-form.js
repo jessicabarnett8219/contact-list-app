@@ -1,0 +1,1 @@
+// exports function to obtain user input and validate it turn it into an object. no dependencies.

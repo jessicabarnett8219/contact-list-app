@@ -1,0 +1,1 @@
+// export function with fetch call to post data to API. dependency on contact form module
