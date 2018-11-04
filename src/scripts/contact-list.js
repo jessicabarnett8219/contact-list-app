@@ -6,11 +6,11 @@
 import contactElementMaker from "./contact"
 
 const domInjector = (object) => {
-  let outputSection = document.querySelector(".output")
+  let outputArticle = document.querySelector(".output")
   // calling the contactElementMaker function (from contact.js)
   let contactElement = contactElementMaker(object)
-  outputSection.appendChild(contactElement)
-  return outputSection
+  outputArticle.appendChild(contactElement)
+  return outputArticle
 }
 
 export default domInjector

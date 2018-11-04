@@ -5,13 +5,13 @@
 
 
 const contactElementMaker = (contactObject) => {
-  let contactSection = document.createElement("section")
-  contactSection.innerHTML = `
+  let contactElement = document.createElement("section")
+  contactElement.innerHTML = `
   <h2>${contactObject.name}</h2>
   <p>${contactObject.phoneNumber}</p>
   <p>${contactObject.address}</p>
   `
-  return contactSection
+  return contactElement
 }
 
 export default contactElementMaker
