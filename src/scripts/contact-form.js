@@ -4,17 +4,20 @@
 */
 
 
-const createContactObject = () => {
+const createContactObject = (event) => {
   // obtain reference to input fields
   const nameInput = document.querySelector("#nameInput")
   const phoneInput = document.querySelector("#phoneInput")
   const addressInput = document.querySelector("#addressInput")
+  let newContact
 
-  // creating 
-  let newContact = {
-  name: nameInput.value,
-  phoneNumber: phoneInput.value,
-  address: addressInput.value
+  if(nameInput.value === "" || phoneInput.value === "" || addressInput.value === "") {
+    alert("No fields can be left blank")
+  } else
+      newContact = {
+      name: nameInput.value,
+      phoneNumber: phoneInput.value,
+      address: addressInput.value
 }
 return newContact
 }
